@@ -19,32 +19,108 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/tvProvinsi"
+            <LinearLayout
+                android:id="@+id/conAsal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Provinsi"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kota Asal"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvProvinsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Provinsi"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:layout_below="@+id/tvProvinsi"
+                    android:id="@+id/spinnerProvinsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_below="@+id/spinnerProvinsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:layout_below="@+id/tvCity"
+                    android:id="@+id/spinnerCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kota Tujuan"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvProvinsiTujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Provinsi"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:layout_below="@+id/tvProvinsiTujuan"
+                    android:id="@+id/spinnerProvinsiTujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvCityTujuan"
+                    android:layout_below="@+id/spinnerProvinsiTujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:layout_below="@+id/tvCityTujuan"
+                    android:id="@+id/spinnerCityTujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEkspedisi"
+                android:layout_below="@+id/conAsal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ekspedisi"
                 android:textStyle="bold"/>
 
             <Spinner
-                android:layout_below="@+id/tvProvinsi"
-                android:id="@+id/spinnerProvinsi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-                android:id="@+id/tvCity"
-                android:layout_below="@+id/spinnerProvinsi"
+                android:layout_below="@+id/tvEkspedisi"
+                android:id="@+id/spinnerEkspedisi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="City"
-                android:textStyle="bold"/>
+                android:layout_marginBottom="10dp"/>
 
-            <Spinner
-                android:layout_below="@+id/tvCity"
-                android:id="@+id/spinnerCity"
+            <Button
+                android:id="@+id/cekOngkir"
+                android:layout_below="@+id/spinnerEkspedisi"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Cek Ongkir"
+                />
 
         </RelativeLayout>
 

@@ -35,5 +35,5 @@ object ApiRajaOngkir {
     val instance: ApiService
         get() = client.create(ApiService::class.java)
 
-    val apiKey = "fe0b81d6d80cb6512710af51e3e71ca1"
+    val apiKey = "739e54328604da5f05214339ebfa3852"
 }
